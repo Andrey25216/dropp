@@ -106,6 +106,7 @@ body {
     background-color: #ff6633;
     padding: 5px 50px;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 0 10px #535353;
     transition: all 1s;
@@ -315,9 +316,10 @@ body {
 .form__text {
     color: #fd5433;
     min-height: 230px;
-    max-width: calc(1200px - 19px);
+    max-width: calc(100% - 34px);
+    min-width: calc(100% - 34px);
     border: #cac9c9 solid 2px;
-    padding: 15px 0 0 15px;
+    padding: 15px;
     font-size: 20px;
     font-family: 'Arial', sans-serif;
     font-weight: 400;
@@ -328,6 +330,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    cursor: pointer;
 }
 
 .footer {

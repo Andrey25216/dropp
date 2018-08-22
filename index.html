@@ -213,16 +213,16 @@
             <form action="" class="form" method="post">
                 <div class="form__inner">
                         <input type="text" class="form__input form__name" placeholder="Your name here" onfocus="placeholder='';"
-                               onblur="placeholder='Your name here';">
+                               onblur="placeholder='Your name here';" required>
                         <input type="email" class="form__input form__mail" placeholder="Email address here" onfocus="placeholder='';"
-                               onblur="placeholder='Email address here';">
+                               onblur="placeholder='Email address here';" required>
                 </div>
                 <div class="form__inner form__column">
                         <textarea class="form__text" placeholder="Your message here" onfocus="placeholder='';"
-                                  onblur="placeholder='Your message here';"></textarea>
+                                  onblur="placeholder='Your message here';" required></textarea>
                 </div>
                 <div class="form__inner form__button-box form__column">
-                    <a href="#" class="button ba-teaser__link">Send message now</a>
+                    <button type="submit" class="button ba-teaser__link">Send message now</button>
                 </div>
             </form>
         </div>
