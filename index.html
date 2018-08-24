@@ -8,9 +8,7 @@
 <body>
 <header class="content header">
     <h1 class="header__logo">
-        <span class="header__logo-name label">Dr</span>
-        <span class="header__logo-item label">o</span>
-        <span class="header__logo-name label">pp</span>
+        Dr<span class="header__logo-item">o</span>pp
     </h1>
     <nav class="menu header__menu">
         <ul class="menu__list">
@@ -44,7 +42,7 @@
 <section class="section services">
     <h2 class="title">Services</h2>
     <div class="section__inner">
-        <div class="content section__content service-box">
+        <div class="content section__content">
             <div class="service">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 245" width="170px">
                     <path class="service__image-color"
@@ -85,46 +83,46 @@
     <h2 class="title">Portfolio</h2>
     <div class="section__project">
         <div class="section__project-box">
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project12.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project5.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project6.jpg" alt="Project image">
             </a>
         </div>
         <div class="section__project-box">
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project7.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project8.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project9.jpg" alt="Project image">
             </a>
         </div>
         <div class="section__project-box">
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project9.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project7.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project11.jpg" alt="Project image">
             </a>
         </div>
         <div class="section__project-box">
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project10.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project11.jpg" alt="Project image">
             </a>
-            <a class="project__link" href="#">
+            <a class="project" href="#">
                 <img class="project__image" src="images/project6.jpg" alt="Project image">
             </a>
         </div>
@@ -190,7 +188,7 @@
                             </ul>
                             <div class="profile-level">
                                 <div class="profile-level__status">
-                                    <!--<progress value="50" max="100"></progress>-->
+                                    <!--<progress class="status" value="50" max="100"></progress>-->
                                     <span class="profile-level__progress-bar status">
                                     </span>
                                     <span class="profile-level__progress-bar2 status">
@@ -346,16 +344,20 @@
         <div class="content section__form">
             <form action="" class="form" method="post">
                 <div class="form__inner">
-                    <input type="text" class="form__input form__name" placeholder="Your name here"
-                           onfocus="placeholder='';"
-                           onblur="placeholder='Your name here';" required>
-                    <input type="email" class="form__input form__mail" placeholder="Email address here"
-                           onfocus="placeholder='';"
-                           onblur="placeholder='Email address here';" required>
+                    <label class="form__label">
+                        <span class="visually-hidden">Your name here</span>
+                        <input type="text" class="form__input" placeholder="Your name here" required>
+                    </label>
+                    <label class="form__label">
+                        <span class="visually-hidden">Email address here</span>
+                        <input type="email" class="form__input" placeholder="Email address here" required>
+                    </label>
                 </div>
                 <div class="form__inner form__column">
-                        <textarea class="form__text" placeholder="Your message here" onfocus="placeholder='';"
-                                  onblur="placeholder='Your message here';" required></textarea>
+                    <label>
+                        <span class="visually-hidden">Your message here</span>
+                        <textarea class="form__text" placeholder="Your message here" required></textarea>
+                    </label>
                 </div>
                 <div class="form__inner form__button-box form__column">
                     <button type="submit" class="button ba-teaser__link">Send message now</button>
