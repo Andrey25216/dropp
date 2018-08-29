@@ -11,25 +11,51 @@
     <h1 class="header__logo">
         Dr<span class="header__logo-item">o</span>pp
     </h1>
+    <label class="hamburger">
+        <input class="hamburger__input" type="checkbox">
+        <span class="hamburger__menu">
+                <span class="hamburger"></span>
+            </span>
+        <ul class="hamburger__list">
+            <li class="hamburger__list-item">
+                <a href="#" class="hamburger__link">Home</a>
+            </li>
+            <li class="hamburger__list-item">
+                <a href="#services" class="hamburger__link">Services</a>
+            </li>
+            <li class="hamburger__list-item">
+                <a href="#projects" class="hamburger__link">Portfolio</a>
+            </li>
+            <li class="hamburger__list-item">
+                <a href="#abouts" class="hamburger__link">About</a>
+            </li>
+            <li class="hamburger__list-item">
+                <a href="#" class="hamburger__link">Blog</a>
+            </li>
+            <li class="hamburger__list-item">
+                <a href="#contacts" class="hamburger__link">Contact</a>
+            </li>
+        </ul>
+    </label>
     <nav class="menu header__menu">
         <ul class="menu__list">
             <li class="menu__list-item">
                 <a href="#" class="menu__link link">Home</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__link link">Services</a>
+                <a href="#services" class="menu__link link">Services</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__link link">Portfolio</a>
+                <a href="#projects" class="menu__link link">Portfolio</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__link link">About</a>
+                <a href="#abouts" class="menu__link link">About</a>
             </li>
             <li class="menu__list-item">
                 <a href="#" class="menu__link link">Blog</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__link link">Contact</a>
+                <a href="#contacts" class="menu__link link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -40,7 +66,7 @@
         <a href="#" class="button ba-teaser__link">Have a seat</a>
     </div>
 </div>
-<section class="section services">
+<section class="section services" id="services">
     <h2 class="title">Services</h2>
     <div class="section__inner">
         <div class="content section__content">
@@ -80,7 +106,7 @@
         </div>
     </div>
 </section>
-<section class="section projects">
+<section class="section projects" id="projects">
     <h2 class="title">Portfolio</h2>
     <div class="section__project">
         <a class="project" href="#">
@@ -121,7 +147,7 @@
         </a>
     </div>
 </section>
-<section class="section abouts">
+<section class="section abouts" id="abouts">
     <h2 class="title">About us</h2>
     <div class="section__inner">
         <div class="section__profiles">
@@ -261,83 +287,76 @@
         </div>
     </div>
 </section>
-<section class="section posts">
+<section class="section posts" id="posts">
     <h2 class="title">Latest posts</h2>
-    <div class="section__inner">
-        <div class="content section__content section__posts">
-            <div class="section__post-box">
-                <article class="post">
-                    <div class="post__image-box">
-                        <img class="post__image" src="images/post1.jpg" alt="Post image">
-                    </div>
-                    <div class="post__content">
-                        <h3 class="post__title">SUMMER ADVENTURES...</h3>
-                        <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
-                        <div class="post__text">
-                            <p>
-                                We can always be on our best or worst behavior,depending on our surroundings give us.
-                                Summertime me is
-                                usually the season to unwind(...)
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="post">
-                    <div class="post__image-box">
-                        <img class="post__image" src="images/post2.jpg" alt="Post image">
-                    </div>
-                    <div class="post__content">
-                        <h3 class="post__title">HEROES: DECAT O REVI...</h3>
-                        <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
-                        <div class="post__text">
-                            <p>
-                                This issue of “Decat o Revista” was about the omnipresent story of the
-                                “hero” - a story in wich
-                                we all
-                            </p>
-                        </div>
-                    </div>
-                </article>
+    <div class="posts__container content">
+        <article class="post">
+            <div class="post__image-box">
+                <img class="post__image" src="images/post1.jpg" alt="Девушка на природе">
             </div>
-            <div class="section__post-box">
-                <article class="post">
-                    <div class="post__image-box">
-                        <img class="post__image" src="images/post3.jpg" alt="Post image">
-                    </div>
-                    <div class="post__content">
-                        <h3 class="post__title">ROMANIAN FOLKLORE</h3>
-                        <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
-                        <div class="post__text">
-                            <p>
-                                An illustration for a gallery expo at Imbold Gallery. The central was
-                                illustration for a gallery expo at Imbold Gallery. The cent An illustration for a
-                                gallery expo at Imbold Gallery.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="post">
-                    <div class="post__image-box">
-                        <img class="post__image" src="images/post4.jpg" alt="Post image">
-                    </div>
-                    <div class="post__content">
-                        <h3 class="post__title">WHAT’S ON DUBAI AND...</h3>
-                        <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
-                        <div class="post__text">
-                            <p>
-                                Let’s take a look at some brilliant cover illustrations create Let’s take a
-                                look
-                                at some brilliant cover illustrations create Let’s take a look at some brilliant cover
-                                illustrations
-                            </p>
-                        </div>
-                    </div>
-                </article>
+            <div class="post__content">
+                <h3 class="post__title">SUMMER ADVENTURES...</h3>
+                <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
+                <div class="post__text">
+                    <p>
+                        We can always be on our best or worst behavior,depending on our surroundings give us.
+                        Summertime me is
+                        usually the season to unwind(...)
+                    </p>
+                </div>
             </div>
-        </div>
+        </article>
+        <article class="post">
+            <div class="post__image-box">
+                <img class="post__image" src="images/post2.jpg" alt="Heroes: decat o revi...">
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">HEROES: DECAT O REVI...</h3>
+                <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
+                <div class="post__text">
+                    <p>
+                        This issue of “Decat o Revista” was about the omnipresent story of the
+                        “hero” - a story in wich we all
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="post">
+            <div class="post__image-box">
+                <img class="post__image" src="images/post3.jpg" alt="Romanian folklore">
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">ROMANIAN FOLKLORE</h3>
+                <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
+                <div class="post__text">
+                    <p>
+                        An illustration for a gallery expo at Imbold Gallery. The central was
+                        illustration for a gallery expo at Imbold Gallery. The cent An illustration for a
+                        gallery expo at Imbold Gallery.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="post">
+            <div class="post__image-box">
+                <img class="post__image" src="images/post4.jpg" alt="What's on dubai and...">
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">WHAT’S ON DUBAI AND...</h3>
+                <time datetime="2018-08-16" class="post__date">POSTED: AUG 16 2018</time>
+                <div class="post__text">
+                    <p>
+                        Let’s take a look at some brilliant cover illustrations create Let’s take a
+                        look
+                        at some brilliant cover illustrations create Let’s take a look at some brilliant cover
+                        illustrations
+                    </p>
+                </div>
+            </div>
+        </article>
     </div>
 </section>
-<section class="section contacts">
+<section class="section contacts" id="contacts">
     <h2 class="title">Contact us</h2>
     <div class="section__image">
         <div class="content section__form">

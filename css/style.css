@@ -52,7 +52,7 @@ p {
 }
 
 img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
 }
 
@@ -113,7 +113,7 @@ p:not(:only-of-type) {
 }
 
 @media screen and (max-width: 740px) {
-    .header__menu {
+    .menu__list {
         display: none;
     }
 }
@@ -186,9 +186,7 @@ p:not(:only-of-type) {
 }
 
 .section__inner {
-    border-top: #999999 solid 1px;
-    border-bottom: #999999 solid 1px;
-    padding-bottom: 6rem;
+
 }
 
 .title {
@@ -272,10 +270,12 @@ p:not(:only-of-type) {
     display: block;
 }
 
-.section__post-box {
+.posts__container {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
 }
 
 @media screen and (min-width: 881px) {
@@ -300,13 +300,8 @@ p:not(:only-of-type) {
     margin-right: 0;
 }
 
-.post__image {
-    width: 100%;
-}
-
 .post__image-box {
-    margin-top: .8rem;
-    margin-bottom: .8rem;
+    padding-top: .8rem;
 }
 
 .post__content {
@@ -335,7 +330,7 @@ p:not(:only-of-type) {
     height: 4px;
     background-color: #ff6633;
     position: absolute;
-    top: 3.7rem;
+    bottom: 0;
     left: 0;
 }
 
@@ -350,20 +345,23 @@ p:not(:only-of-type) {
 }
 
 @media screen and (max-width: 1189px) {
-    .section__post-box {
+    .posts__container {
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 561px){
-    .post{
+@media screen and (min-width: 561px) {
+    .post {
         margin-right: 3rem;
+    }
+
+    .post:nth-child(n+3) {
         margin-top: 10rem;
     }
 }
 
-@media screen and (max-width: 560px){
-    .post{
+@media screen and (max-width: 560px) {
+    .post {
         margin-right: 0;
         margin-top: 5rem;
     }
@@ -613,6 +611,114 @@ progress::-moz-progress-bar {
 /*//////////////////////EndSkills/////////////////*/
 
 /*//////////////////////Hamburger/////////////////*/
+ .hamburger__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 8rem;
+    height: 10.4rem;
+    background: #ff6633;
+    border-radius: 0 0 0 90%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #ff6633, 0 0 0 0 #ff6633;
+    cursor: pointer;
+}
 
+label .hamburger {
+    position: absolute;
+    top: 5.2rem;
+    left: 3rem;
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+.hamburger__input {
+    display: none;
+}
+
+.hamburger__input:checked + .hamburger__menu {
+    box-shadow: 0 0 0 100vw #ff6633, 0 0 0 100vh #ff6633;
+    border-radius: 0;
+}
+
+.hamburger__input:checked + .hamburger__menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger__input:checked + .hamburger__menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.hamburger__input:checked + .hamburger__menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.hamburger__input:checked + .hamburger__menu + .hamburger__list {
+    opacity: 1;
+    left: 50%;
+}
+
+.hamburger__list {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: -99999999px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .25s 0s ease-in-out;
+    padding-left: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.hamburger__list-item {
+    margin-top: 20px;
+}
+
+.hamburger__list-item:first-child {
+    margin-top: 0;
+}
+
+.hamburger__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+@media all and (min-width: 741px) {
+    .hamburger {
+        display: none;
+    }
+}
 
 /*//////////////////////EndHamburger//////////////*/
