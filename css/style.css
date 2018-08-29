@@ -56,6 +56,14 @@ img {
     max-width: 100%;
 }
 
+.title_border {
+    border-bottom: #999999 solid 1px;
+}
+
+.section_border {
+    border-top: #999999 solid 1px;
+}
+
 p:not(:only-of-type) {
     margin-bottom: 2.5rem;
 }
@@ -185,10 +193,6 @@ p:not(:only-of-type) {
     }
 }
 
-.section__inner {
-
-}
-
 .title {
     font-size: 3.2rem;
     font-weight: 700;
@@ -221,6 +225,14 @@ p:not(:only-of-type) {
     .profile-skills {
         padding-bottom: 6rem;
     }
+
+    .section__content {
+        margin-bottom: 6rem;
+    }
+}
+
+.services {
+    margin-bottom: 8rem;
 }
 
 .service {
@@ -252,6 +264,12 @@ p:not(:only-of-type) {
     }
 }
 
+@media screen and (max-width: 1219px) {
+    .service {
+        display: inline-block;
+    }
+}
+
 .section__project {
     display: flex;
     flex-wrap: wrap;
@@ -270,12 +288,15 @@ p:not(:only-of-type) {
     display: block;
 }
 
+.posts{
+    margin-bottom: 8rem;
+}
+
 .posts__container {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    padding-top: .9rem;
-    padding-bottom: .9rem;
+    margin-top: 8rem;
 }
 
 @media screen and (min-width: 881px) {
@@ -611,7 +632,7 @@ progress::-moz-progress-bar {
 /*//////////////////////EndSkills/////////////////*/
 
 /*//////////////////////Hamburger/////////////////*/
- .hamburger__menu {
+.hamburger__menu {
     position: absolute;
     top: 0;
     right: 0;
@@ -715,7 +736,7 @@ label .hamburger:after {
     font-size: 2rem;
 }
 
-@media all and (min-width: 741px) {
+@media screen and (min-width: 741px) {
     .hamburger {
         display: none;
     }
